@@ -8,8 +8,7 @@ interface ExperienceItem {
 }
 
 interface ExperienceProps {
-  relevant: ExperienceItem[];
-  other: ExperienceItem[];
+  items: ExperienceItem[];
 }
 
 function formatDate(date: string | null): string {
@@ -17,6 +16,13 @@ function formatDate(date: string | null): string {
   const [year, month] = date.split("-");
   const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
   return `${months[parseInt(month) - 1]} ${year}`;
+}
+
+function sortByDate(a: ExperienceItem, b: ExperienceItem): number {
+  const aEnd = a.endDate ? new Date(a.endDate).getTime() : Date.now();
+  const bEnd = b.endDate ? new Date(b.endDate).getTime() : Date.now();
+  if (bEnd !== aEnd) return bEnd - aEnd;
+  return new Date(b.startDate).getTime() - new Date(a.startDate).getTime();
 }
 
 function ExperienceEntry({ item }: { item: ExperienceItem }) {
@@ -43,29 +49,15 @@ function ExperienceEntry({ item }: { item: ExperienceItem }) {
   );
 }
 
-export default function Experience({ relevant, other }: ExperienceProps) {
-  const sortByDate = (a: ExperienceItem, b: ExperienceItem) =>
-    new Date(b.startDate).getTime() - new Date(a.startDate).getTime();
+export default function Experience({ items }: ExperienceProps) {
+  const sorted = [...items].sort(sortByDate);
 
   return (
     <section id="experience" className="py-20 px-6 bg-teal-bg">
       <div className="max-w-3xl mx-auto">
         <h2 className="text-3xl font-bold text-teal-dark mb-8">Experience</h2>
-
-        <h3 className="text-lg font-semibold text-teal-primary mb-4">
-          Relevant Professional Experience
-        </h3>
-        <div className="mb-10">
-          {[...relevant].sort(sortByDate).map((item, i) => (
-            <ExperienceEntry key={i} item={item} />
-          ))}
-        </div>
-
-        <h3 className="text-lg font-semibold text-teal-primary mb-4">
-          Other Professional Experience
-        </h3>
         <div>
-          {[...other].sort(sortByDate).map((item, i) => (
+          {sorted.map((item, i) => (
             <ExperienceEntry key={i} item={item} />
           ))}
         </div>

@@ -1,4 +1,5 @@
 import { Mail } from "lucide-react";
+import Image from "next/image";
 
 function LinkedInIcon({ size = 20 }: { size?: number }) {
   return (
@@ -13,33 +14,48 @@ interface HeroProps {
   tagline: string;
   email: string;
   linkedin: string;
+  photo?: string;
 }
 
-export default function Hero({ name, tagline, email, linkedin }: HeroProps) {
+export default function Hero({ name, tagline, email, linkedin, photo }: HeroProps) {
   return (
     <section className="bg-teal-dark text-white py-24 px-6">
-      <div className="max-w-3xl mx-auto">
-        <h1 className="text-5xl md:text-6xl font-bold mb-4">{name}</h1>
-        <p className="text-xl text-teal-light mb-8">{tagline}</p>
-        <div className="flex gap-4">
-          <a
-            href={`mailto:${email}`}
-            className="flex items-center gap-2 text-teal-accent hover:text-white transition-colors"
-          >
-            <Mail size={20} />
-            <span>{email}</span>
-          </a>
-          {linkedin && (
+      <div className="max-w-3xl mx-auto flex flex-col md:flex-row items-center gap-10">
+        {photo && (
+          <div className="shrink-0">
+            <Image
+              src={photo}
+              alt={name}
+              width={180}
+              height={180}
+              className="rounded-full object-cover w-[180px] h-[180px] border-4 border-teal-accent"
+              priority
+            />
+          </div>
+        )}
+        <div>
+          <h1 className="text-5xl md:text-6xl font-bold mb-4">{name}</h1>
+          <p className="text-xl text-teal-light mb-8">{tagline}</p>
+          <div className="flex flex-wrap gap-4">
             <a
-              href={linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={`mailto:${email}`}
               className="flex items-center gap-2 text-teal-accent hover:text-white transition-colors"
             >
-              <LinkedInIcon size={20} />
-              <span>LinkedIn</span>
+              <Mail size={20} />
+              <span>{email}</span>
             </a>
-          )}
+            {linkedin && (
+              <a
+                href={linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-teal-accent hover:text-white transition-colors"
+              >
+                <LinkedInIcon size={20} />
+                <span>LinkedIn</span>
+              </a>
+            )}
+          </div>
         </div>
       </div>
     </section>

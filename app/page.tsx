@@ -15,13 +15,11 @@ export default function Home() {
         tagline={data.personal.tagline}
         email={data.personal.email}
         linkedin={data.personal.linkedin}
+        photo={data.personal.photo}
       />
       <About bio={data.personal.bio} />
       <Impact items={data.impact} />
-      <Experience
-        relevant={data.experience.relevant}
-        other={data.experience.other}
-      />
+      <Experience items={data.experience} />
       <Projects projects={data.projects} />
       <Education
         education={data.education}
