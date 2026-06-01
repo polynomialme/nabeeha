@@ -1,5 +1,4 @@
 import { Mail } from "lucide-react";
-import Image from "next/image";
 
 function LinkedInIcon({ size = 20 }: { size?: number }) {
   return (
@@ -23,13 +22,11 @@ export default function Hero({ name, tagline, email, linkedin, photo }: HeroProp
       <div className="max-w-3xl mx-auto flex flex-col md:flex-row items-center gap-10">
         {photo && (
           <div className="shrink-0">
-            <Image
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
               src={photo}
               alt={name}
-              width={180}
-              height={180}
               className="rounded-full object-cover w-[180px] h-[180px] border-4 border-teal-accent"
-              priority
             />
           </div>
         )}
