@@ -18,7 +18,7 @@ interface HeroProps {
 
 export default function Hero({ name, tagline, email, linkedin, photo }: HeroProps) {
   return (
-    <section className="bg-teal-dark text-white py-24 px-6">
+    <section className="bg-teal-dark text-white pt-28 pb-20 px-6">
       <div className="max-w-3xl mx-auto flex flex-col md:flex-row items-center gap-10">
         {photo && (
           <div className="shrink-0">

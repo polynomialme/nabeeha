@@ -160,6 +160,27 @@
       ]
     }
   ],
+  "skillsToolkit": {
+    "subtitle": "The operating, analytical, and people skills I lean on.",
+    "categories": [
+      {
+        "name": "Ops & Programs",
+        "items": ["Project Management", "Go-to-Market Strategy", "Event Planning", "Stakeholder Coordination", "Team Leadership"]
+      },
+      {
+        "name": "Research & Analysis",
+        "items": ["Python", "R", "Tableau", "GIS Tools", "Excel", "Data Analysis", "Mixed-Methods Research"]
+      },
+      {
+        "name": "Languages",
+        "items": ["English (Fluent)", "Urdu (Fluent)", "French (Intermediate)", "Arabic (Beginner)"]
+      },
+      {
+        "name": "Certifications",
+        "items": ["Database Management", "MS Office", "PowerPoint"]
+      }
+    ]
+  },
   "projects": [
     {
       "name": "Flood Awareness Campaign Optimization",
@@ -230,7 +251,5 @@
         "Moderated 15 competition sessions attended by 824 participants."
       ]
     }
-  ],
-  "languages": ["English (Fluent)", "Urdu (Fluent)", "French (Intermediate)", "Arabic (Beginner)"],
-  "skills": ["MS Office", "Excel", "Python", "R", "Tableau", "GIS tools", "PowerPoint", "Database Management"]
+  ]
 }

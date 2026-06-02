@@ -15,4 +15,30 @@ html {
 body {
   color: #333333;
   background-color: #F0F7F7;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark body,
+html.dark body {
+  color: #E0E0E0;
+  background-color: #0F1A1F;
+}
+
+/* Dark mode overrides */
+html.dark {
+  --color-teal-bg: #0F1A1F;
+}
+
+/* Impact horizontal scroll */
+.impact-scroll {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.impact-scroll::-webkit-scrollbar {
+  display: none;
+}
+.impact-scroll > * {
+  scroll-snap-align: start;
 }

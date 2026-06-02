@@ -51,9 +51,9 @@ export default function Contact({ email, linkedin }: ContactProps) {
               />
             </div>
             <div>
-              <label htmlFor="email" className="block text-sm text-teal-light mb-1">Email</label>
+              <label htmlFor="sender-email" className="block text-sm text-teal-light mb-1">Email</label>
               <input
-                id="email"
+                id="sender-email"
                 type="email"
                 required
                 value={senderEmail}
