@@ -18,7 +18,7 @@ interface HeroProps {
 
 export default function Hero({ name, tagline, email, linkedin, photo }: HeroProps) {
   return (
-    <section className="bg-teal-dark text-white pt-28 pb-20 px-6">
+    <section className="bg-navy text-white pt-28 pb-20 px-6">
       <div className="max-w-3xl mx-auto flex flex-col md:flex-row items-center gap-10">
         {photo && (
           <div className="shrink-0">
@@ -26,17 +26,17 @@ export default function Hero({ name, tagline, email, linkedin, photo }: HeroProp
             <img
               src={photo}
               alt={name}
-              className="rounded-full object-cover w-[180px] h-[180px] border-4 border-teal-accent"
+              className="rounded-full object-cover w-[180px] h-[180px] border-4 border-purple"
             />
           </div>
         )}
         <div>
           <h1 className="text-5xl md:text-6xl font-bold mb-4">{name}</h1>
-          <p className="text-xl text-teal-light mb-8">{tagline}</p>
+          <p className="text-xl text-text-dim mb-8">{tagline}</p>
           <div className="flex flex-wrap gap-4">
             <a
               href={`mailto:${email}`}
-              className="flex items-center gap-2 text-teal-accent hover:text-white transition-colors"
+              className="flex items-center gap-2 text-purple-light hover:text-white transition-colors"
             >
               <Mail size={20} />
               <span>{email}</span>
@@ -46,7 +46,7 @@ export default function Hero({ name, tagline, email, linkedin, photo }: HeroProp
                 href={linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-teal-accent hover:text-white transition-colors"
+                className="flex items-center gap-2 text-purple-light hover:text-white transition-colors"
               >
                 <LinkedInIcon size={20} />
                 <span>LinkedIn</span>

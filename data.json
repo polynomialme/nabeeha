@@ -9,50 +9,66 @@
   },
   "impact": [
     {
+      "title": "Go-to-Market",
       "number": "45",
-      "label": "Retail Partners Onboarded",
+      "label": "retail partners onboarded",
+      "description": "Built distribution for a nutritional supplement in the ~$2.5B GLP-1 market",
       "org": "Kelker Pharma",
       "date": "2025-09"
     },
     {
+      "title": "Brand Growth",
       "number": "101.5K",
-      "label": "Social Media Reach Increase",
+      "label": "social media reach increase",
+      "description": "Devised brand awareness plan, managed content, and tracked engagement metrics",
       "org": "Valley Water",
       "date": "2023-08"
     },
     {
+      "title": "Outreach Strategy",
       "number": "400%",
-      "label": "Application Growth from Karachi",
+      "label": "application growth from Karachi",
+      "description": "Identified underrepresented city, coordinated targeted outreach with high-performing schools",
       "org": "Minerva University",
       "date": "2023-05"
     },
     {
+      "title": "Community Impact",
       "number": "150K",
-      "label": "Individuals Impacted",
+      "label": "individuals impacted",
+      "description": "Improved Flood Awareness Campaign using GIS to identify high-risk communities",
       "org": "Valley Water",
       "date": "2023-08"
     },
     {
+      "title": "Global Reach",
       "number": "~12.5K",
-      "label": "Applications/Year Increase",
+      "label": "applications/year increase",
+      "description": "Outreach across Middle East, North Africa, and Pakistan, presenting in 16 countries",
       "org": "Minerva University",
       "date": "2023-05"
     },
     {
+      "title": "Media Production",
       "number": "3,835",
-      "label": "Avg Views per Episode",
+      "label": "avg views per episode",
+      "description": "Launched 7 Zoom podcasts featuring Pakistani policymakers with ~12.5% subscriber growth",
       "org": "PSA Coalition",
       "date": "2026-05"
     },
     {
+      "title": "Sustainability",
       "number": "~60%",
-      "label": "B-Corp Score Increase",
+      "label": "B-Corp score increase",
+      "description": "Audited business practices and developed targeted operational recommendations",
       "org": "Expatrio",
       "date": "2021-04"
     },
     {
+      "title": "Youth Engagement",
       "number": "824",
-      "label": "Participants Engaged",
+      "label": "participants engaged",
+      "description": "Moderated 15 competition sessions and outreach to 93 underrepresented schools",
       "org": "Science Bowl Pakistan",
       "date": "2023-05"
     }

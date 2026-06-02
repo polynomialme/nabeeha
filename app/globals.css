@@ -1,32 +1,36 @@
 @import "tailwindcss";
 
 @theme {
-  --color-teal-dark: #1A2F38;
-  --color-teal-primary: #2A6B6E;
-  --color-teal-accent: #4DA8A8;
-  --color-teal-light: #B8D8D8;
-  --color-teal-bg: #F0F7F7;
+  --color-navy: #1B1F2F;
+  --color-navy-light: #252A3A;
+  --color-navy-card: #2D3348;
+  --color-purple: #7B6CF6;
+  --color-purple-light: #9B8FFF;
+  --color-amber: #E8A87C;
+  --color-rose: #E879A0;
+  --color-cream: #F8F7F5;
+  --color-cream-card: #FFFFFF;
+  --color-text-dark: #2D2B3D;
+  --color-text-muted: #6B6B80;
+  --color-text-light: #E8E8F0;
+  --color-text-dim: #8888A0;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+/* Light mode */
 body {
-  color: #333333;
-  background-color: #F0F7F7;
+  color: var(--color-text-dark);
+  background-color: var(--color-cream);
   transition: background-color 0.3s, color 0.3s;
 }
 
-.dark body,
+/* Dark mode */
 html.dark body {
-  color: #E0E0E0;
-  background-color: #0F1A1F;
-}
-
-/* Dark mode overrides */
-html.dark {
-  --color-teal-bg: #0F1A1F;
+  color: var(--color-text-light);
+  background-color: var(--color-navy);
 }
 
 /* Impact horizontal scroll */
@@ -35,6 +39,7 @@ html.dark {
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
+  padding-right: 40px;
 }
 .impact-scroll::-webkit-scrollbar {
   display: none;

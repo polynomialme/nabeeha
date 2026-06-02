@@ -31,48 +31,46 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-teal-dark/95 backdrop-blur-sm border-b border-teal-primary/20">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-navy/95 backdrop-blur-sm border-b border-purple/20">
       <div className="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
         <a href="#" className="text-white font-bold text-lg">NA</a>
 
-        {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-6">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-teal-light hover:text-white transition-colors"
+              className="text-sm text-text-dim hover:text-white transition-colors"
             >
               {link.label}
             </a>
           ))}
           <a
             href="#contact"
-            className="text-sm px-4 py-1.5 bg-teal-primary text-white rounded-lg hover:bg-teal-accent transition-colors"
+            className="text-sm px-4 py-1.5 bg-purple text-white rounded-lg hover:bg-purple-light transition-colors"
           >
             Contact Me
           </a>
           <button
             onClick={toggleDark}
-            className="text-teal-light hover:text-white transition-colors p-1"
+            className="text-text-dim hover:text-white transition-colors p-1"
             aria-label="Toggle dark mode"
           >
             {dark ? <Sun size={18} /> : <Moon size={18} />}
           </button>
         </div>
 
-        {/* Mobile controls */}
         <div className="flex md:hidden items-center gap-3">
           <button
             onClick={toggleDark}
-            className="text-teal-light hover:text-white transition-colors p-1"
+            className="text-text-dim hover:text-white transition-colors p-1"
             aria-label="Toggle dark mode"
           >
             {dark ? <Sun size={18} /> : <Moon size={18} />}
           </button>
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="text-teal-light hover:text-white transition-colors p-1"
+            className="text-text-dim hover:text-white transition-colors p-1"
             aria-label="Toggle menu"
           >
             {menuOpen ? <X size={20} /> : <Menu size={20} />}
@@ -80,15 +78,14 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-teal-dark border-t border-teal-primary/20 px-6 py-4 space-y-3">
+        <div className="md:hidden bg-navy border-t border-purple/20 px-6 py-4 space-y-3">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
               onClick={() => setMenuOpen(false)}
-              className="block text-sm text-teal-light hover:text-white transition-colors"
+              className="block text-sm text-text-dim hover:text-white transition-colors"
             >
               {link.label}
             </a>
@@ -96,7 +93,7 @@ export default function Navbar() {
           <a
             href="#contact"
             onClick={() => setMenuOpen(false)}
-            className="block text-sm text-teal-accent hover:text-white transition-colors"
+            className="block text-sm text-purple-light hover:text-white transition-colors"
           >
             Contact Me
           </a>

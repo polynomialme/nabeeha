@@ -29,54 +29,54 @@ export default function Contact({ email, linkedin }: ContactProps) {
   }
 
   return (
-    <section id="contact" className="py-20 px-6 bg-teal-dark text-white">
+    <section id="contact" className="py-20 px-6 bg-navy text-white">
       <div className="max-w-3xl mx-auto">
         <h2 className="text-3xl font-bold mb-4 text-center">Get in Touch</h2>
-        <p className="text-teal-light mb-10 text-center">
+        <p className="text-text-dim mb-10 text-center">
           Interested in working together? I'd love to hear from you.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label htmlFor="name" className="block text-sm text-teal-light mb-1">Name</label>
+              <label htmlFor="name" className="block text-sm text-text-dim mb-1">Name</label>
               <input
                 id="name"
                 type="text"
                 required
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="w-full px-4 py-2 rounded-lg bg-white/10 border border-teal-light/30 text-white placeholder-teal-light/50 focus:outline-none focus:border-teal-accent"
+                className="w-full px-4 py-2 rounded-lg bg-navy-light border border-purple/20 text-white placeholder-text-dim focus:outline-none focus:border-purple"
                 placeholder="Your name"
               />
             </div>
             <div>
-              <label htmlFor="sender-email" className="block text-sm text-teal-light mb-1">Email</label>
+              <label htmlFor="sender-email" className="block text-sm text-text-dim mb-1">Email</label>
               <input
                 id="sender-email"
                 type="email"
                 required
                 value={senderEmail}
                 onChange={(e) => setSenderEmail(e.target.value)}
-                className="w-full px-4 py-2 rounded-lg bg-white/10 border border-teal-light/30 text-white placeholder-teal-light/50 focus:outline-none focus:border-teal-accent"
+                className="w-full px-4 py-2 rounded-lg bg-navy-light border border-purple/20 text-white placeholder-text-dim focus:outline-none focus:border-purple"
                 placeholder="your@email.com"
               />
             </div>
             <div>
-              <label htmlFor="message" className="block text-sm text-teal-light mb-1">Message</label>
+              <label htmlFor="message" className="block text-sm text-text-dim mb-1">Message</label>
               <textarea
                 id="message"
                 required
                 rows={4}
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                className="w-full px-4 py-2 rounded-lg bg-white/10 border border-teal-light/30 text-white placeholder-teal-light/50 focus:outline-none focus:border-teal-accent resize-none"
+                className="w-full px-4 py-2 rounded-lg bg-navy-light border border-purple/20 text-white placeholder-text-dim focus:outline-none focus:border-purple resize-none"
                 placeholder="What would you like to discuss?"
               />
             </div>
             <button
               type="submit"
-              className="flex items-center gap-2 px-6 py-3 bg-teal-primary rounded-lg hover:bg-teal-accent transition-colors font-medium"
+              className="flex items-center gap-2 px-6 py-3 bg-purple rounded-lg hover:bg-purple-light transition-colors font-medium"
             >
               <Send size={18} />
               Send Message
@@ -86,7 +86,7 @@ export default function Contact({ email, linkedin }: ContactProps) {
           <div className="flex flex-col justify-center gap-4">
             <a
               href={`mailto:${email}`}
-              className="flex items-center gap-3 text-teal-light hover:text-white transition-colors"
+              className="flex items-center gap-3 text-text-dim hover:text-white transition-colors"
             >
               <Mail size={20} />
               <span>{email}</span>
@@ -96,7 +96,7 @@ export default function Contact({ email, linkedin }: ContactProps) {
                 href={linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 text-teal-light hover:text-white transition-colors"
+                className="flex items-center gap-3 text-text-dim hover:text-white transition-colors"
               >
                 <LinkedInIcon size={20} />
                 <span>LinkedIn</span>
