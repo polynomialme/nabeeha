@@ -128,7 +128,7 @@ export default function Experience({ items }: ExperienceProps) {
   const sorted = [...items].sort(sortByDate);
 
   return (
-    <section id="experience" className="py-20 px-6 bg-ivory dark:bg-midnight">
+    <section id="experience" className="py-12 px-6 bg-midnight">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl font-bold text-ink dark:text-silk mb-10 text-center">
           Experience

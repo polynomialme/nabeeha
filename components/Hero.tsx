@@ -19,7 +19,7 @@ interface HeroProps {
 
 export default function Hero({ name, tagline, email, linkedin, photo, video }: HeroProps) {
   return (
-    <section className="bg-sapphire dark:bg-midnight text-white pt-28 pb-20 px-6">
+    <section className="bg-midnight text-white pt-24 pb-12 px-6">
       <div className="max-w-3xl mx-auto flex flex-col md:flex-row items-center gap-10">
         {photo && (
           <div className="shrink-0">

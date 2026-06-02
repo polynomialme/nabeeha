@@ -17,7 +17,7 @@ const categoryColors = [
 
 export default function SkillsToolkit({ subtitle, categories }: SkillsToolkitProps) {
   return (
-    <section id="skills" className="py-20 px-6 bg-ivory dark:bg-midnight">
+    <section id="skills" className="py-12 px-6 bg-midnight">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl font-bold text-ink dark:text-silk mb-2">
           Skills Toolkit

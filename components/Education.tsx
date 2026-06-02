@@ -22,7 +22,7 @@ interface EducationProps {
 
 export default function Education({ education, volunteering }: EducationProps) {
   return (
-    <section id="education" className="py-20 px-6 bg-ivory dark:bg-midnight">
+    <section id="education" className="py-12 px-6 bg-midnight">
       <div className="max-w-3xl mx-auto">
         <h2 className="text-3xl font-bold text-ink dark:text-silk mb-8">
           Education
