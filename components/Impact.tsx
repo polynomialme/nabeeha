@@ -36,24 +36,24 @@ export default function Impact({ items }: ImpactProps) {
         >
           Impact
         </h2>
-        <div className="impact-scroll flex gap-5 pb-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
           {sorted.map((item, i) => {
             const color = cardColors[i % cardColors.length];
             return (
               <div
                 key={i}
-                className={`min-w-[260px] max-w-[260px] bg-ivory-card dark:bg-midnight-card rounded-xl p-6 border ${color.border} shrink-0 transition-colors`}
+                className={`bg-ivory-card dark:bg-midnight-card rounded-xl p-5 border ${color.border} transition-colors`}
               >
                 <div className={`text-xs font-semibold uppercase tracking-wider ${color.accent} mb-3`}>
                   {item.title}
                 </div>
                 <div
-                  className={`text-4xl font-bold ${color.accent} mb-1`}
+                  className={`text-3xl md:text-4xl font-bold text-ink dark:text-silk mb-1`}
                   style={{ fontFamily: "var(--font-playfair), 'Times New Roman', serif" }}
                 >
                   {item.number}
                 </div>
-                <div className="text-sm font-medium text-ink dark:text-silk mb-3">
+                <div className="text-sm font-medium text-ink dark:text-silk mb-2">
                   {item.label}
                 </div>
                 <p className="text-xs text-ink-muted dark:text-silk-muted leading-relaxed">

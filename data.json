@@ -2,7 +2,6 @@
   "personal": {
     "name": "Nabeeha Navaal Ahmed",
     "tagline": "Social scientist and strategist driving measurable impact through data-driven outreach, product development, and community engagement across 7 countries.",
-    "bio": "I'm a Minerva University graduate with a background in economics and operations, currently pursuing dual masters at Hult International Business School. I've worked across public outreach, product management, and social impact — from increasing flood awareness for 150,000 people to growing university applications by 400%. I bring a global perspective shaped by living and working in Seoul, Berlin, Buenos Aires, Taipei, London, and San Francisco.",
     "email": "nahmed4@student.hult.edu",
     "linkedin": "https://www.linkedin.com/in/nabeehaahmed/",
     "photo": "/photo.jpg"
@@ -20,7 +19,7 @@
       "title": "Brand Growth",
       "number": "101.5K",
       "label": "social media reach increase",
-      "description": "Devised brand awareness plan, managed content, and tracked engagement metrics",
+      "description": "Built outreach strategy, wrote blog and social content that grew reach",
       "org": "Valley Water",
       "date": "2023-08"
     },
@@ -28,7 +27,7 @@
       "title": "Outreach Strategy",
       "number": "400%",
       "label": "application growth from Karachi",
-      "description": "Identified underrepresented city, coordinated targeted outreach with high-performing schools",
+      "description": "Identified underrepresented city, coordinated targeted outreach with top schools",
       "org": "Minerva University",
       "date": "2023-05"
     },
@@ -44,7 +43,7 @@
       "title": "Global Reach",
       "number": "~12.5K",
       "label": "applications/year increase",
-      "description": "Outreach across Middle East, North Africa, and Pakistan, presenting in 16 countries",
+      "description": "Led outreach across Middle East, North Africa, and Pakistan in 16 countries",
       "org": "Minerva University",
       "date": "2023-05"
     },
@@ -52,8 +51,8 @@
       "title": "Media Production",
       "number": "3,835",
       "label": "avg views per episode",
-      "description": "Launched 7 Zoom podcasts featuring Pakistani policymakers with ~12.5% subscriber growth",
-      "org": "PSA Coalition",
+      "description": "Cold-invited 40+ policymakers, produced interview series with ~12.5% subscriber growth",
+      "org": "Connecting Youth To Leaders of Today",
       "date": "2026-05"
     },
     {
@@ -81,8 +80,8 @@
       "startDate": "2024-10",
       "endDate": "2025-09",
       "bullets": [
-        "Identified a nutritional support gap in the GLP-1 consumer market through market and literature review of a ~$2.5B category and pitched and developed a supplement concept.",
-        "Designed and executed go-to-market and commercialization activities by evaluating retail channels, onboarding 45 partners, developing the product website, and supporting sales efforts."
+        "Identified a nutritional support gap in the GLP-1 consumer market through market and literature review of a ~$2.5B category and pitched and developed a supplement concept, collaborating with physicians to finalize product formulation.",
+        "Designed and executed go-to-market and commercialization activities by evaluating retail channels, onboarding 45 partners, developing the product website, and supporting sales and promotional efforts to drive distribution."
       ]
     },
     {
@@ -102,19 +101,19 @@
       "startDate": "2023-09",
       "endDate": "2024-05",
       "bullets": [
-        "Graded assignments and in-class responses for 25 students per semester under fixed weekly deadlines.",
-        "Reviewed student work to identify recurring technical (R, Python) and theoretical gaps and coached students to resolve misconceptions."
+        "Appointed based on maintaining consistently high GPA, demonstrating academic excellence, and grasp over subject matter exemplified by assignments, class discussions, and relevant work experience.",
+        "Graded assignments and in class responses for 25 students each semester; coached students to clarify misconceptions and assisted with timely submission of assignments."
       ]
     },
     {
       "title": "Founding Director of Programs",
-      "org": "Pakistani Students Association Coalition",
+      "org": "Connecting Youth To Leaders of Today - Podcast Series",
       "location": "Remote, USA",
       "startDate": "2023-06",
       "endDate": null,
       "bullets": [
-        "Designed and executed a structured programming plan by launching 7 live Zoom podcasts featuring Pakistani policymakers and leaders, achieving an average of 3,835 views per episode and ~12.5% monthly subscriber growth.",
-        "Moderated and coordinated panel discussions, increasing live audience engagement by ~25% over an 8-month period."
+        "Cold-invited and interviewed 40+ high-profile policymakers and leaders for Pakistani Student Association Coalition's Webinar series, designing the questions for each conversation to draw substantive, non-obvious insight out of guests practiced at staying on message, with a live student audience.",
+        "The series is archived on YouTube to aid research, achieving an average of 3,835 views and ~12.5% monthly subscriber growth."
       ]
     },
     {
@@ -124,9 +123,9 @@
       "startDate": "2023-05",
       "endDate": "2023-08",
       "bullets": [
-        "Devised a plan to increase brand awareness, wrote blog posts, managed social media handles, created media content; tracked engagement metrics and prepared periodic updates for internal review. Social Media reach increased by 101,500 views, and blog reach by 1,616 individuals.",
+        "Built the department's outreach strategy and wrote the blog and social content that carried it, growing social reach by 101,500 views and blog readership by 1,616 views.",
         "Analyzed and recommended improvements for the Flood Awareness Campaign based on previous year's data impacting 150,000 individuals. Using GIS, identified high-risk communities and strategized effective outreach, evacuation, and rehabilitation plans.",
-        "Reviewed outreach and distribution data and identified reliance on English-only flood safety pamphlets. Analyzed neighborhood-level demographic and language data to recommend multilingual materials, specifying target neighborhoods and distribution points."
+        "Reviewed outreach and distribution data and identified reliance on English-only flood safety pamphlets. Analyzed neighborhood-level demographic and language data to recommend multilingual materials, specifying which languages to deploy, target neighborhoods, and appropriate distribution points."
       ]
     },
     {
@@ -136,7 +135,7 @@
       "startDate": "2022-06",
       "endDate": "2022-08",
       "bullets": [
-        "Analyzed public health data to identify gaps in First Aid Awareness Programs within underprivileged communities, leading to an Urdu-language intervention.",
+        "Analyzed public health and community-level data to identify gaps in First Aid Awareness Programs within underprivileged communities, leading to the design of an Urdu-language intervention to improve accessibility.",
         "Collaborated with 4 doctors to develop a standardized First Aid syllabus in Urdu covering all age groups and core emergency scenarios.",
         "Organized and delivered 5 First Aid awareness sessions, educating 67 students across targeted communities."
       ]
@@ -148,9 +147,9 @@
       "startDate": "2021-09",
       "endDate": "2023-05",
       "bullets": [
-        "Supported institutional outreach across the Middle East, North Africa, and Pakistan, delivering presentations in 16 countries; efforts culminated in an average increase of ~12,500 applications per year.",
-        "Coordinated engagements with educational institutions and USEFP bodies in Pakistan, rendering a 22% growth in Minerva's reach within Pakistan.",
-        "Reviewed application data to identify Karachi as an underrepresented city; supported targeted outreach contributing to a 400% increase in applications from the region."
+        "Managed Middle East, North African regions and later Pakistan, leading presentations in 16 countries to increase Minerva's awareness. Resulted in an average increase of 12,500 applications per year.",
+        "Enhanced ties with prestigious educational institutions and USEFP bodies, leading to a 22% growth in Minerva's reach within Pakistan and a 0.6% increase in acceptance rates from the region.",
+        "Reviewed data and identified Karachi as an underrepresented city. Implemented targeted strategies, identifying top-performing schools and presenting Minerva to stakeholders resulting in a 400% increase in applications."
       ]
     },
     {
@@ -158,10 +157,10 @@
       "org": "Expatrio",
       "location": "Berlin, Germany",
       "startDate": "2021-01",
-      "endDate": "2021-04",
+      "endDate": "2021-05",
       "bullets": [
-        "Analyzed the B-Corp certification framework and evaluation criteria to identify priority operational and governance gaps.",
-        "Audited business practices against B-Corp standards and developed recommendations that supported a ~60% increase in the company's B-Corp score."
+        "Analyzed the B-Corp certification framework and evaluation criteria by reviewing questionnaire requirements and scoring methodology in collaboration with a 3-member team to identify priority operational and governance gaps.",
+        "Audited business practices against B-Corp standards and developed targeted operational and process recommendations that supported a ~60% increase in the company's B-Corp score and progression toward certification."
       ]
     },
     {
@@ -171,8 +170,8 @@
       "startDate": "2020-09",
       "endDate": "2021-04",
       "bullets": [
-        "Conducted mixed-methods research on homelessness in San Francisco to identify gaps in information synthesis and accessibility affecting service delivery.",
-        "Managed a research team of 4 contributors to deliver a consolidated pitch deck with evidence-based recommendations for policy discussion."
+        "Conducted mixed-methods research on homelessness in San Francisco by combining online sources and field observations to review existing policies and service models, identifying gaps in information synthesis and accessibility.",
+        "Managed a research team of 4 contributors by setting milestones, coordinating tasks, and monitoring progress against timelines to deliver a consolidated pitch deck with evidence-based recommendations for policy discussion."
       ]
     }
   ],
@@ -185,15 +184,15 @@
       },
       {
         "name": "Research & Analysis",
-        "items": ["Python", "R", "Tableau", "GIS Tools", "Excel", "Data Analysis", "Mixed-Methods Research"]
+        "items": ["R", "Tableau", "Python", "SQL", "Excel", "GIS Tools", "Impact Assessment", "Mixed-Methods Research"]
       },
       {
         "name": "Languages",
         "items": ["English (Fluent)", "Urdu (Fluent)", "French (Intermediate)", "Arabic (Beginner)"]
       },
       {
-        "name": "Certifications",
-        "items": ["Database Management", "MS Office", "PowerPoint"]
+        "name": "Certifications & Training",
+        "items": ["Arete Effective Altruism", "BlueDot Future of AI", "Database Management"]
       }
     ]
   },
@@ -223,8 +222,8 @@
       "link": null
     },
     {
-      "name": "PSA Coalition Podcast Series",
-      "description": "Launched and produced 7 live Zoom podcasts featuring Pakistani policymakers and leaders, building a growing audience with 3,835 average views per episode and 12.5% monthly subscriber growth.",
+      "name": "Connecting Youth To Leaders of Today",
+      "description": "Cold-invited and interviewed 40+ high-profile policymakers and leaders, producing a live interview series archived on YouTube with 3,835 average views per episode and 12.5% monthly subscriber growth.",
       "tags": ["Media Production", "Community Engagement", "Leadership"],
       "link": null
     },
@@ -238,10 +237,12 @@
   "education": [
     {
       "school": "Hult International Business School",
-      "degree": "Masters in Management (Marketing) & Masters in Business Analytics",
+      "degree": "Masters in Management (Artificial Intelligence and Data Analytics)",
       "location": "Cambridge, USA",
       "dates": "2027",
-      "details": ["Future Leader & Changemaker Scholarships Recipient"]
+      "details": [
+        "Relevant Coursework: Machine Learning & AI, Data Management & SQL, AI for Sustainability, AI Strategy, Business Insights through Data & Visualization, Digital Marketing Strategy, Design Thinking for Innovation"
+      ]
     },
     {
       "school": "Minerva University",
@@ -250,8 +251,8 @@
       "dates": "2024",
       "details": [
         "Minerva Scholarship Recipient",
-        "Admitted to a selective (<1.7% acceptance rate) program",
-        "Residencies: Seoul, Berlin, Buenos Aires, Taipei, London"
+        "Relevant Coursework: Econometrics & Economic Systems, Statistical Modeling, Global Development and Applied Economics, Intermediate Economic Theory",
+        "Completed semester-long academic and professional residencies across Asia, Europe, and Latin America"
       ]
     }
   ],

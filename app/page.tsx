@@ -1,7 +1,6 @@
 import data from "../data.json";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
-import About from "../components/About";
 import Impact from "../components/Impact";
 import SkillsToolkit from "../components/SkillsToolkit";
 import Experience from "../components/Experience";
@@ -21,7 +20,6 @@ export default function Home() {
           linkedin={data.personal.linkedin}
           photo={data.personal.photo}
         />
-        <About bio={data.personal.bio} />
         <Impact items={data.impact} />
         <SkillsToolkit
           subtitle={data.skillsToolkit.subtitle}
