@@ -66,7 +66,7 @@ function ExperienceCard({ item, index }: { item: ExperienceItem; index: number }
       <p className="text-sm text-emerald dark:text-emerald-light italic mb-3">
         {item.org}
         {item.link && (
-          <a href={item.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 ml-2 text-gold hover:text-gold-light" onClick={(e) => e.stopPropagation()}>
+          <a href={item.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 ml-2 text-gold hover:text-gold-light">
             <ExternalLink size={12} />
           </a>
         )}
