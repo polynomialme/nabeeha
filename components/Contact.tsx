@@ -31,10 +31,10 @@ export default function Contact({ email, linkedin }: ContactProps) {
   return (
     <section id="contact" className="py-12 px-6 bg-midnight text-white">
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-3xl font-bold mb-4 text-center">
+        <h2 className="text-3xl font-bold mb-4">
           Get in Touch
         </h2>
-        <p className="text-silk/70 mb-10 text-center italic">
+        <p className="text-silk/70 mb-10 italic">
           Interested in working together? I'd love to hear from you.
         </p>
 
@@ -48,7 +48,7 @@ export default function Contact({ email, linkedin }: ContactProps) {
                 required
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="w-full px-4 py-2 rounded-lg bg-sapphire-light/30 dark:bg-midnight-light border border-gold/20 text-white placeholder-silk/30 focus:outline-none focus:border-gold"
+                className="w-full px-4 py-2 rounded-lg bg-midnight-light border border-gold/20 text-white placeholder-silk/30 focus:outline-none focus:border-gold"
                 placeholder="Your name"
               />
             </div>
@@ -60,7 +60,7 @@ export default function Contact({ email, linkedin }: ContactProps) {
                 required
                 value={senderEmail}
                 onChange={(e) => setSenderEmail(e.target.value)}
-                className="w-full px-4 py-2 rounded-lg bg-sapphire-light/30 dark:bg-midnight-light border border-gold/20 text-white placeholder-silk/30 focus:outline-none focus:border-gold"
+                className="w-full px-4 py-2 rounded-lg bg-midnight-light border border-gold/20 text-white placeholder-silk/30 focus:outline-none focus:border-gold"
                 placeholder="your@email.com"
               />
             </div>
@@ -72,7 +72,7 @@ export default function Contact({ email, linkedin }: ContactProps) {
                 rows={4}
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                className="w-full px-4 py-2 rounded-lg bg-sapphire-light/30 dark:bg-midnight-light border border-gold/20 text-white placeholder-silk/30 focus:outline-none focus:border-gold resize-none"
+                className="w-full px-4 py-2 rounded-lg bg-midnight-light border border-gold/20 text-white placeholder-silk/30 focus:outline-none focus:border-gold resize-none"
                 placeholder="What would you like to discuss?"
               />
             </div>

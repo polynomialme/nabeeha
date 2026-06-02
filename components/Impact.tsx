@@ -12,10 +12,10 @@ interface ImpactProps {
 }
 
 const cardColors = [
-  { accent: "text-emerald", border: "border-emerald/30 hover:border-emerald" },
-  { accent: "text-ruby", border: "border-ruby/30 hover:border-ruby" },
+  { accent: "text-emerald-light", border: "border-emerald/30 hover:border-emerald" },
+  { accent: "text-ruby-light", border: "border-ruby/30 hover:border-ruby" },
   { accent: "text-sapphire-light", border: "border-sapphire/30 hover:border-sapphire" },
-  { accent: "text-amethyst", border: "border-amethyst/30 hover:border-amethyst" },
+  { accent: "text-gold-light", border: "border-gold/30 hover:border-gold" },
   { accent: "text-gold", border: "border-gold/30 hover:border-gold" },
   { accent: "text-ruby-light", border: "border-ruby/30 hover:border-ruby" },
   { accent: "text-emerald-light", border: "border-emerald/30 hover:border-emerald" },
@@ -30,7 +30,7 @@ export default function Impact({ items }: ImpactProps) {
   return (
     <section id="impact" className="py-12 px-6 bg-midnight">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold text-ink dark:text-silk mb-8">
+        <h2 className="text-3xl font-bold text-silk mb-8">
           Impact
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
@@ -39,18 +39,18 @@ export default function Impact({ items }: ImpactProps) {
             return (
               <div
                 key={i}
-                className={`bg-ivory-card dark:bg-midnight-card rounded-xl p-5 border ${color.border} transition-colors`}
+                className={`bg-midnight-card rounded-xl p-5 border ${color.border} transition-colors`}
               >
                 <div className={`text-xs font-semibold uppercase tracking-wider ${color.accent} mb-3`}>
                   {item.title}
                 </div>
-                <div className={`text-3xl md:text-4xl font-bold text-ink dark:text-silk mb-1`}>
+                <div className="text-3xl md:text-4xl font-bold text-silk mb-1">
                   {item.number}
                 </div>
-                <div className="text-sm font-medium text-ink dark:text-silk mb-2">
+                <div className="text-sm font-medium text-silk mb-2">
                   {item.label}
                 </div>
-                <p className="text-xs text-ink-muted dark:text-silk-muted leading-relaxed">
+                <p className="text-xs text-silk-muted leading-relaxed">
                   {item.description}
                 </p>
               </div>

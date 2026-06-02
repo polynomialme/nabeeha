@@ -55,15 +55,15 @@ function LogoOrInitials({ item, size = 40 }: { item: ExperienceItem; size?: numb
   );
 }
 
-function ExperienceCard({ item, index }: { item: ExperienceItem; index: number }) {
+function ExperienceCard({ item, index, isLast }: { item: ExperienceItem; index: number; isLast: boolean }) {
   const isLeft = index % 2 === 0;
 
   const card = (
-    <div className="bg-ivory-card dark:bg-midnight-card rounded-xl p-6 border border-gray-200 dark:border-silk-muted/10 shadow-sm">
-      <h3 className="font-bold text-ink dark:text-silk text-xl mb-1">
+    <div className="bg-midnight-card rounded-xl p-6 border border-silk-muted/10 shadow-sm">
+      <h3 className="font-bold text-silk text-xl mb-1">
         {item.title}
       </h3>
-      <p className="text-sm text-emerald dark:text-emerald-light italic mb-3">
+      <p className="text-sm text-emerald-light italic mb-3">
         {item.org}
         {item.link && (
           <a href={item.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 ml-2 text-gold hover:text-gold-light">
@@ -73,7 +73,7 @@ function ExperienceCard({ item, index }: { item: ExperienceItem; index: number }
       </p>
       <ul className="list-disc list-outside ml-4 space-y-2">
         {item.bullets.map((bullet, i) => (
-          <li key={i} className="text-sm leading-relaxed text-ink-muted dark:text-silk-muted">
+          <li key={i} className="text-sm leading-relaxed text-silk-muted">
             {bullet}
           </li>
         ))}
@@ -83,7 +83,7 @@ function ExperienceCard({ item, index }: { item: ExperienceItem; index: number }
 
   const date = (
     <div className="flex items-center h-full pt-4">
-      <span className="text-sm text-ink-muted dark:text-silk-muted italic">
+      <span className="text-sm text-silk-muted italic">
         {formatDate(item.startDate)} – {formatDate(item.endDate)}
       </span>
     </div>
@@ -93,11 +93,12 @@ function ExperienceCard({ item, index }: { item: ExperienceItem; index: number }
     <div className="relative flex items-start md:items-center">
       {/* Mobile layout */}
       <div className="md:hidden w-full pl-16">
-        <div className="absolute left-[23px] top-0 bottom-0 w-[2px] bg-gray-200 dark:bg-gold/20" />
+        {/* Mobile line: extends down to cover spacing gap, except on last item */}
+        <div className={`absolute left-[23px] top-0 w-[2px] bg-gold/20 ${isLast ? "bottom-auto h-8" : "-bottom-8"}`} />
         <div className="absolute left-[4px] top-4 z-10">
           <LogoOrInitials item={item} />
         </div>
-        <div className="text-xs text-ink-muted dark:text-silk-muted italic mb-2">
+        <div className="text-xs text-silk-muted italic mb-2">
           {formatDate(item.startDate)} – {formatDate(item.endDate)}
         </div>
         {card}
@@ -110,13 +111,14 @@ function ExperienceCard({ item, index }: { item: ExperienceItem; index: number }
         </div>
 
         <div className="flex flex-col items-center relative">
-          <div className="absolute top-0 bottom-0 w-[2px] bg-gray-200 dark:bg-gold/20" />
-          <div className="relative z-10 mt-4 rounded-full border-4 border-ivory dark:border-midnight overflow-hidden">
+          {/* Desktop line: extends beyond card to bridge gap, except on last item */}
+          <div className={`absolute top-0 w-[2px] bg-gold/20 ${isLast ? "bottom-auto h-8" : "-bottom-8"}`} />
+          <div className="relative z-10 mt-4 rounded-full border-4 border-midnight overflow-hidden">
             <LogoOrInitials item={item} size={44} />
           </div>
         </div>
 
-        <div className={!isLeft ? "pl-8" : "pl-8"}>
+        <div className="pl-8">
           {!isLeft ? card : date}
         </div>
       </div>
@@ -130,12 +132,12 @@ export default function Experience({ items }: ExperienceProps) {
   return (
     <section id="experience" className="py-12 px-6 bg-midnight">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold text-ink dark:text-silk mb-10 text-center">
+        <h2 className="text-3xl font-bold text-silk mb-10">
           Experience
         </h2>
         <div className="space-y-8">
           {sorted.map((item, i) => (
-            <ExperienceCard key={i} item={item} index={i} />
+            <ExperienceCard key={i} item={item} index={i} isLast={i === sorted.length - 1} />
           ))}
         </div>
       </div>

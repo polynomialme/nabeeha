@@ -15,10 +15,10 @@ interface ProjectsProps {
 }
 
 const tagColors = [
-  "text-emerald border-emerald/20",
-  "text-ruby border-ruby/20",
+  "text-emerald-light border-emerald/20",
+  "text-ruby-light border-ruby/20",
   "text-sapphire-light border-sapphire/20",
-  "text-amethyst border-amethyst/20",
+  "text-amethyst-light border-amethyst/20",
   "text-gold border-gold/20",
 ];
 
@@ -27,11 +27,11 @@ function ProjectCard({ project }: { project: Project }) {
 
   return (
     <div
-      className="bg-ivory-card dark:bg-midnight-card rounded-xl p-5 cursor-pointer hover:shadow-lg transition-all border border-gray-200 dark:border-silk-muted/10"
+      className="bg-midnight-card rounded-xl p-5 cursor-pointer hover:shadow-lg transition-all border border-silk-muted/10"
       onClick={() => setExpanded(!expanded)}
     >
       <div className="flex justify-between items-start mb-2">
-        <h3 className="font-bold text-ink dark:text-silk">
+        <h3 className="font-bold text-silk">
           {project.name}
         </h3>
         <div className="flex items-center gap-2 shrink-0">
@@ -40,7 +40,7 @@ function ProjectCard({ project }: { project: Project }) {
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-emerald hover:text-emerald-light"
+              className="text-emerald-light hover:text-emerald"
               onClick={(e) => e.stopPropagation()}
             >
               <ExternalLink size={16} />
@@ -63,14 +63,14 @@ function ProjectCard({ project }: { project: Project }) {
         ))}
       </div>
       {expanded && (
-        <div className="mt-3 pt-3 border-t border-gray-100 dark:border-silk-muted/10">
-          <p className="text-sm leading-relaxed text-ink-muted dark:text-silk-muted">{project.description}</p>
+        <div className="mt-3 pt-3 border-t border-silk-muted/10">
+          <p className="text-sm leading-relaxed text-silk-muted">{project.description}</p>
           {project.link && (
             <a
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 text-sm text-emerald hover:text-emerald-light mt-3"
+              className="inline-flex items-center gap-1 text-sm text-emerald-light hover:text-emerald mt-3"
               onClick={(e) => e.stopPropagation()}
             >
               <ExternalLink size={14} />
@@ -87,7 +87,7 @@ export default function Projects({ projects }: ProjectsProps) {
   return (
     <section id="projects" className="py-12 px-6 bg-midnight">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold text-ink dark:text-silk mb-8">
+        <h2 className="text-3xl font-bold text-silk mb-8">
           Projects
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
