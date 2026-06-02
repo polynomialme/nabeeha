@@ -1,36 +1,45 @@
 @import "tailwindcss";
 
 @theme {
-  --color-navy: #1B1F2F;
-  --color-navy-light: #252A3A;
-  --color-navy-card: #2D3348;
-  --color-purple: #7B6CF6;
-  --color-purple-light: #9B8FFF;
-  --color-amber: #E8A87C;
-  --color-rose: #E879A0;
-  --color-cream: #F8F7F5;
-  --color-cream-card: #FFFFFF;
-  --color-text-dark: #2D2B3D;
-  --color-text-muted: #6B6B80;
-  --color-text-light: #E8E8F0;
-  --color-text-dim: #8888A0;
+  /* Jewel tones */
+  --color-emerald: #0D6B58;
+  --color-emerald-light: #1A9E82;
+  --color-sapphire: #1B3A6B;
+  --color-sapphire-light: #2E5AA0;
+  --color-ruby: #9B2335;
+  --color-ruby-light: #C43E52;
+  --color-amethyst: #6B3FA0;
+  --color-amethyst-light: #8B65C0;
+  --color-gold: #C4973B;
+  --color-gold-light: #D4AD5A;
+
+  /* Backgrounds */
+  --color-ivory: #FAF8F5;
+  --color-ivory-card: #FFFFFF;
+  --color-midnight: #151520;
+  --color-midnight-card: #1E1E30;
+  --color-midnight-light: #2A2A40;
+
+  /* Text */
+  --color-ink: #2A2A35;
+  --color-ink-muted: #5A5A6E;
+  --color-silk: #F0EDE8;
+  --color-silk-muted: #9A97A0;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-/* Light mode */
 body {
-  color: var(--color-text-dark);
-  background-color: var(--color-cream);
+  color: var(--color-ink);
+  background-color: var(--color-ivory);
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Dark mode */
 html.dark body {
-  color: var(--color-text-light);
-  background-color: var(--color-navy);
+  color: var(--color-silk);
+  background-color: var(--color-midnight);
 }
 
 /* Impact horizontal scroll */

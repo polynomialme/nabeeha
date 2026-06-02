@@ -1,8 +1,16 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Playfair_Display, Lora } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+});
+
+const lora = Lora({
+  subsets: ["latin"],
+  variable: "--font-lora",
+});
 
 export const metadata: Metadata = {
   title: "Nabeeha Navaal Ahmed",
@@ -16,7 +24,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.className} dark:bg-navy dark:text-text-light transition-colors`}>{children}</body>
+      <body className={`${playfair.variable} ${lora.variable} font-serif dark:bg-midnight dark:text-silk transition-colors`} style={{ fontFamily: "var(--font-lora), 'Times New Roman', Georgia, serif" }}>
+        {children}
+      </body>
     </html>
   );
 }
