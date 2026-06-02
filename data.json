@@ -77,6 +77,7 @@
     {
       "title": "Product Manager - Nutrilinq",
       "org": "Kelker Pharma",
+      "logo": "/logos/kelker.png",
       "location": "Los Angeles, USA",
       "startDate": "2024-10",
       "endDate": "2025-09",
@@ -88,6 +89,7 @@
     {
       "title": "Product Manager Intern",
       "org": "Futre",
+      "logo": "/logos/futre.svg",
       "location": "Remote, USA",
       "startDate": "2024-05",
       "endDate": "2024-09",
@@ -98,6 +100,7 @@
     {
       "title": "Teaching Assistant - Global Development and Applied Economics",
       "org": "Minerva University",
+      "logo": "/logos/minerva.png",
       "location": "San Francisco, USA",
       "startDate": "2023-09",
       "endDate": "2024-05",
@@ -109,6 +112,7 @@
     {
       "title": "Founding Director of Programs",
       "org": "Connecting Youth To Leaders of Today - Podcast Series",
+      "logo": null,
       "location": "Remote, USA",
       "startDate": "2023-06",
       "endDate": null,
@@ -120,6 +124,7 @@
     {
       "title": "Media and Public Outreach Intern",
       "org": "Valley Water - US Government Department for Water (Bay Area)",
+      "logo": "/logos/valleywater.png",
       "location": "San Jose, USA",
       "startDate": "2023-05",
       "endDate": "2023-08",
@@ -132,6 +137,7 @@
     {
       "title": "Fellow, Outstanding Contribution Award",
       "org": "Akhuwat Fellowship",
+      "logo": "/logos/akhuwat.png",
       "location": "Lahore, Pakistan",
       "startDate": "2022-06",
       "endDate": "2022-08",
@@ -144,6 +150,7 @@
     {
       "title": "Outreach Intern",
       "org": "Minerva University",
+      "logo": "/logos/minerva.png",
       "location": "San Francisco, USA",
       "startDate": "2021-09",
       "endDate": "2023-05",
@@ -156,6 +163,7 @@
     {
       "title": "Environmental Business Consultant",
       "org": "Expatrio",
+      "logo": "/logos/expatrio.png",
       "location": "Berlin, Germany",
       "startDate": "2021-01",
       "endDate": "2021-05",
@@ -167,6 +175,7 @@
     {
       "title": "Research Intern & Project Manager",
       "org": "Downtown Streets Team",
+      "logo": "/logos/dst.png",
       "location": "San Francisco, USA",
       "startDate": "2020-09",
       "endDate": "2021-04",

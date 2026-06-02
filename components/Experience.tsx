@@ -1,6 +1,7 @@
 interface ExperienceItem {
   title: string;
   org: string;
+  logo?: string | null;
   location: string;
   startDate: string;
   endDate: string | null;
@@ -29,20 +30,33 @@ function getInitials(org: string): string {
   return org.split(/[\s-]+/).filter(w => w.length > 2).map(w => w[0]).slice(0, 2).join("").toUpperCase();
 }
 
-const dotColors = [
-  "bg-emerald border-emerald",
-  "bg-ruby border-ruby",
-  "bg-sapphire-light border-sapphire",
-  "bg-amethyst border-amethyst",
-  "bg-gold border-gold",
-];
+function LogoOrInitials({ item, size = 40 }: { item: ExperienceItem; size?: number }) {
+  if (item.logo) {
+    return (
+      /* eslint-disable-next-line @next/next/no-img-element */
+      <img
+        src={item.logo}
+        alt={item.org}
+        className="rounded-full object-contain bg-white"
+        style={{ width: size, height: size }}
+      />
+    );
+  }
+  return (
+    <div
+      className="rounded-full bg-sapphire flex items-center justify-center text-white text-xs font-bold"
+      style={{ width: size, height: size }}
+    >
+      {getInitials(item.org)}
+    </div>
+  );
+}
 
 function ExperienceCard({ item, index }: { item: ExperienceItem; index: number }) {
   const isLeft = index % 2 === 0;
-  const dotColor = dotColors[index % dotColors.length];
 
   const card = (
-    <div className="bg-ivory-card dark:bg-midnight-card rounded-xl p-6 border border-gray-200 dark:border-silk-muted/10">
+    <div className="bg-ivory-card dark:bg-midnight-card rounded-xl p-6 border border-gray-200 dark:border-silk-muted/10 shadow-sm">
       <h3 className="font-bold text-ink dark:text-silk text-xl mb-1">
         {item.title}
       </h3>
@@ -68,9 +82,11 @@ function ExperienceCard({ item, index }: { item: ExperienceItem; index: number }
   return (
     <div className="relative flex items-start md:items-center">
       {/* Mobile layout */}
-      <div className="md:hidden w-full pl-12">
-        <div className="absolute left-[19px] top-0 bottom-0 w-[2px] bg-gold/20" />
-        <div className={`absolute left-[10px] top-6 w-5 h-5 rounded-full ${dotColor} border-4 border-ivory dark:border-midnight z-10`} />
+      <div className="md:hidden w-full pl-16">
+        <div className="absolute left-[23px] top-0 bottom-0 w-[2px] bg-gray-200 dark:bg-gold/20" />
+        <div className="absolute left-[4px] top-4 z-10">
+          <LogoOrInitials item={item} />
+        </div>
         <div className="text-xs text-ink-muted dark:text-silk-muted italic mb-2">
           {formatDate(item.startDate)} – {formatDate(item.endDate)}
         </div>
@@ -84,9 +100,9 @@ function ExperienceCard({ item, index }: { item: ExperienceItem; index: number }
         </div>
 
         <div className="flex flex-col items-center relative">
-          <div className="absolute top-0 bottom-0 w-[2px] bg-gold/20" />
-          <div className={`relative z-10 w-10 h-10 rounded-full ${dotColor} flex items-center justify-center text-white text-xs font-bold mt-4 border-4 border-ivory dark:border-midnight`}>
-            {getInitials(item.org)}
+          <div className="absolute top-0 bottom-0 w-[2px] bg-gray-200 dark:bg-gold/20" />
+          <div className="relative z-10 mt-4 rounded-full border-4 border-ivory dark:border-midnight overflow-hidden">
+            <LogoOrInitials item={item} size={44} />
           </div>
         </div>
 

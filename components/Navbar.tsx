@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Moon, Sun, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -51,21 +51,32 @@ export default function Navbar() {
           >
             Contact Me
           </a>
+
+          {/* Dark/Light toggle pill */}
           <button
             onClick={toggleDark}
-            className="text-silk/70 hover:text-gold transition-colors p-1"
+            className="relative flex items-center w-16 h-8 rounded-full bg-midnight/50 dark:bg-gold/20 border border-gold/30 transition-colors"
             aria-label="Toggle dark mode"
           >
-            {dark ? <Sun size={18} /> : <Moon size={18} />}
+            <span className="absolute left-1 text-xs">☀️</span>
+            <span className="absolute right-1 text-xs">🌙</span>
+            <span
+              className={`absolute top-0.5 w-7 h-7 rounded-full bg-gold shadow-md transition-transform duration-300 ${dark ? "translate-x-8" : "translate-x-0.5"}`}
+            />
           </button>
         </div>
 
         <div className="flex md:hidden items-center gap-3">
           <button
             onClick={toggleDark}
-            className="text-silk/70 hover:text-gold transition-colors p-1"
+            className="relative flex items-center w-14 h-7 rounded-full bg-midnight/50 dark:bg-gold/20 border border-gold/30 transition-colors"
+            aria-label="Toggle dark mode"
           >
-            {dark ? <Sun size={18} /> : <Moon size={18} />}
+            <span className="absolute left-1 text-[10px]">☀️</span>
+            <span className="absolute right-1 text-[10px]">🌙</span>
+            <span
+              className={`absolute top-0.5 w-6 h-6 rounded-full bg-gold shadow-md transition-transform duration-300 ${dark ? "translate-x-7" : "translate-x-0.5"}`}
+            />
           </button>
           <button
             onClick={() => setMenuOpen(!menuOpen)}
