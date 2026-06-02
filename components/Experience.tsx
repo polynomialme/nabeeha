@@ -1,7 +1,10 @@
+import { ExternalLink } from "lucide-react";
+
 interface ExperienceItem {
   title: string;
   org: string;
   logo?: string | null;
+  link?: string | null;
   location: string;
   startDate: string;
   endDate: string | null;
@@ -60,7 +63,14 @@ function ExperienceCard({ item, index }: { item: ExperienceItem; index: number }
       <h3 className="font-bold text-ink dark:text-silk text-xl mb-1">
         {item.title}
       </h3>
-      <p className="text-sm text-emerald dark:text-emerald-light italic mb-3">{item.org}</p>
+      <p className="text-sm text-emerald dark:text-emerald-light italic mb-3">
+        {item.org}
+        {item.link && (
+          <a href={item.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 ml-2 text-gold hover:text-gold-light" onClick={(e) => e.stopPropagation()}>
+            <ExternalLink size={12} />
+          </a>
+        )}
+      </p>
       <ul className="list-disc list-outside ml-4 space-y-2">
         {item.bullets.map((bullet, i) => (
           <li key={i} className="text-sm leading-relaxed text-ink-muted dark:text-silk-muted">
