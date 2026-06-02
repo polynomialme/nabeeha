@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className="dark" suppressHydrationWarning>
       <body className={`${playfair.variable} ${lora.variable} dark:bg-midnight dark:text-silk transition-colors`} style={{ fontFamily: "var(--font-lora), 'Times New Roman', Georgia, serif" }}>
         {children}
       </body>
