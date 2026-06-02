@@ -24,20 +24,14 @@ export default function Education({ education, volunteering }: EducationProps) {
   return (
     <section id="education" className="py-20 px-6 bg-ivory dark:bg-midnight">
       <div className="max-w-3xl mx-auto">
-        <h2
-          className="text-3xl font-bold text-ink dark:text-silk mb-8 italic"
-          style={{ fontFamily: "var(--font-playfair), 'Times New Roman', serif" }}
-        >
+        <h2 className="text-3xl font-bold text-ink dark:text-silk mb-8">
           Education
         </h2>
         <div className="space-y-6 mb-12">
           {education.map((edu, i) => (
             <div key={i} className="bg-ivory-card dark:bg-midnight-card rounded-xl p-6 border border-gray-200 dark:border-silk-muted/10">
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start">
-                <h3
-                  className="font-bold text-ink dark:text-silk"
-                  style={{ fontFamily: "var(--font-playfair), 'Times New Roman', serif" }}
-                >
+                <h3 className="font-bold text-ink dark:text-silk">
                   {edu.school}
                 </h3>
                 <span className="text-sm text-ink-muted dark:text-silk-muted italic">{edu.dates} · {edu.location}</span>
@@ -54,20 +48,14 @@ export default function Education({ education, volunteering }: EducationProps) {
           ))}
         </div>
 
-        <h3
-          className="text-lg font-bold text-amethyst dark:text-amethyst-light mb-4 italic"
-          style={{ fontFamily: "var(--font-playfair), 'Times New Roman', serif" }}
-        >
+        <h3 className="text-lg font-bold text-amethyst dark:text-amethyst-light mb-4">
           Volunteering
         </h3>
         <div className="space-y-4">
           {volunteering.map((vol, i) => (
             <div key={i} className="bg-ivory-card dark:bg-midnight-card rounded-xl p-6 border border-gray-200 dark:border-silk-muted/10">
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start">
-                <h3
-                  className="font-bold text-ink dark:text-silk"
-                  style={{ fontFamily: "var(--font-playfair), 'Times New Roman', serif" }}
-                >
+                <h3 className="font-bold text-ink dark:text-silk">
                   {vol.title}
                 </h3>
                 <span className="text-sm text-ink-muted dark:text-silk-muted italic">{vol.org}</span>

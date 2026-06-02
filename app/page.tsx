@@ -19,6 +19,7 @@ export default function Home() {
           email={data.personal.email}
           linkedin={data.personal.linkedin}
           photo={data.personal.photo}
+          video={data.personal.video}
         />
         <Impact items={data.impact} />
         <SkillsToolkit

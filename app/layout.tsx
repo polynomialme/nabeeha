@@ -24,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${playfair.variable} ${lora.variable} font-serif dark:bg-midnight dark:text-silk transition-colors`} style={{ fontFamily: "var(--font-lora), 'Times New Roman', Georgia, serif" }}>
+      <body className={`${playfair.variable} ${lora.variable} dark:bg-midnight dark:text-silk transition-colors`} style={{ fontFamily: "var(--font-lora), 'Times New Roman', Georgia, serif" }}>
         {children}
       </body>
     </html>

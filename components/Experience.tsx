@@ -43,10 +43,7 @@ function ExperienceCard({ item, index }: { item: ExperienceItem; index: number }
 
   const card = (
     <div className="bg-ivory-card dark:bg-midnight-card rounded-xl p-6 border border-gray-200 dark:border-silk-muted/10">
-      <h3
-        className="font-bold text-ink dark:text-silk text-xl mb-1"
-        style={{ fontFamily: "var(--font-playfair), 'Times New Roman', serif" }}
-      >
+      <h3 className="font-bold text-ink dark:text-silk text-xl mb-1">
         {item.title}
       </h3>
       <p className="text-sm text-emerald dark:text-emerald-light italic mb-3">{item.org}</p>
@@ -107,10 +104,7 @@ export default function Experience({ items }: ExperienceProps) {
   return (
     <section id="experience" className="py-20 px-6 bg-ivory dark:bg-midnight">
       <div className="max-w-4xl mx-auto">
-        <h2
-          className="text-3xl font-bold text-ink dark:text-silk mb-10 text-center italic"
-          style={{ fontFamily: "var(--font-playfair), 'Times New Roman', serif" }}
-        >
+        <h2 className="text-3xl font-bold text-ink dark:text-silk mb-10 text-center">
           Experience
         </h2>
         <div className="space-y-8">

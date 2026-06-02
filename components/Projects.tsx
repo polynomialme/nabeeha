@@ -31,10 +31,7 @@ function ProjectCard({ project }: { project: Project }) {
       onClick={() => setExpanded(!expanded)}
     >
       <div className="flex justify-between items-start mb-2">
-        <h3
-          className="font-bold text-ink dark:text-silk"
-          style={{ fontFamily: "var(--font-playfair), 'Times New Roman', serif" }}
-        >
+        <h3 className="font-bold text-ink dark:text-silk">
           {project.name}
         </h3>
         <div className="flex items-center gap-2 shrink-0">
@@ -90,10 +87,7 @@ export default function Projects({ projects }: ProjectsProps) {
   return (
     <section id="projects" className="py-20 px-6 bg-ivory dark:bg-midnight">
       <div className="max-w-4xl mx-auto">
-        <h2
-          className="text-3xl font-bold text-ink dark:text-silk mb-8 italic"
-          style={{ fontFamily: "var(--font-playfair), 'Times New Roman', serif" }}
-        >
+        <h2 className="text-3xl font-bold text-ink dark:text-silk mb-8">
           Projects
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

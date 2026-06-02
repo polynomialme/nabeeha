@@ -14,9 +14,10 @@ interface HeroProps {
   email: string;
   linkedin: string;
   photo?: string;
+  video?: string | null;
 }
 
-export default function Hero({ name, tagline, email, linkedin, photo }: HeroProps) {
+export default function Hero({ name, tagline, email, linkedin, photo, video }: HeroProps) {
   return (
     <section className="bg-sapphire dark:bg-midnight text-white pt-28 pb-20 px-6">
       <div className="max-w-3xl mx-auto flex flex-col md:flex-row items-center gap-10">
@@ -60,6 +61,16 @@ export default function Hero({ name, tagline, email, linkedin, photo }: HeroProp
           </div>
         </div>
       </div>
+      {video && (
+        <div className="mt-10 max-w-2xl mx-auto">
+          <video
+            src={video}
+            controls
+            className="w-full rounded-xl"
+            preload="metadata"
+          />
+        </div>
+      )}
     </section>
   );
 }

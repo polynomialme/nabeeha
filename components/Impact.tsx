@@ -30,10 +30,7 @@ export default function Impact({ items }: ImpactProps) {
   return (
     <section id="impact" className="py-20 px-6 bg-ivory dark:bg-midnight">
       <div className="max-w-5xl mx-auto">
-        <h2
-          className="text-3xl font-bold text-ink dark:text-silk mb-8 italic"
-          style={{ fontFamily: "var(--font-playfair), 'Times New Roman', serif" }}
-        >
+        <h2 className="text-3xl font-bold text-ink dark:text-silk mb-8">
           Impact
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
@@ -47,10 +44,7 @@ export default function Impact({ items }: ImpactProps) {
                 <div className={`text-xs font-semibold uppercase tracking-wider ${color.accent} mb-3`}>
                   {item.title}
                 </div>
-                <div
-                  className={`text-3xl md:text-4xl font-bold text-ink dark:text-silk mb-1`}
-                  style={{ fontFamily: "var(--font-playfair), 'Times New Roman', serif" }}
-                >
+                <div className={`text-3xl md:text-4xl font-bold text-ink dark:text-silk mb-1`}>
                   {item.number}
                 </div>
                 <div className="text-sm font-medium text-ink dark:text-silk mb-2">
