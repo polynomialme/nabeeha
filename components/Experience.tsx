@@ -93,8 +93,6 @@ function ExperienceCard({ item, index, isLast }: { item: ExperienceItem; index: 
     <div className="relative flex items-start md:items-center">
       {/* Mobile layout */}
       <div className="md:hidden w-full pl-16">
-        {/* Mobile line: extends down to cover spacing gap, except on last item */}
-        <div className={`absolute left-[23px] top-0 w-[2px] bg-gold/20 ${isLast ? "bottom-auto h-8" : "-bottom-8"}`} />
         <div className="absolute left-[4px] top-4 z-10">
           <LogoOrInitials item={item} />
         </div>
@@ -111,8 +109,6 @@ function ExperienceCard({ item, index, isLast }: { item: ExperienceItem; index: 
         </div>
 
         <div className="flex flex-col items-center relative">
-          {/* Desktop line: extends beyond card to bridge gap, except on last item */}
-          <div className={`absolute top-0 w-[2px] bg-gold/20 ${isLast ? "bottom-auto h-8" : "-bottom-8"}`} />
           <div className="relative z-10 mt-4 rounded-full border-4 border-midnight overflow-hidden">
             <LogoOrInitials item={item} size={44} />
           </div>
@@ -135,7 +131,11 @@ export default function Experience({ items }: ExperienceProps) {
         <h2 className="text-3xl font-bold text-silk mb-10">
           Experience
         </h2>
-        <div className="space-y-8">
+        <div className="relative space-y-8">
+          {/* Single continuous line for desktop */}
+          <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-[2px] bg-gold/20 -translate-x-[1px]" />
+          {/* Single continuous line for mobile */}
+          <div className="md:hidden absolute left-[23px] top-0 bottom-0 w-[2px] bg-gold/20" />
           {sorted.map((item, i) => (
             <ExperienceCard key={i} item={item} index={i} isLast={i === sorted.length - 1} />
           ))}
